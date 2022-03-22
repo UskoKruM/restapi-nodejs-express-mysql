@@ -7,7 +7,7 @@ Aprende a crear una REST API usando Node.js, el framework web Express y el siste
 Para instalar los paquetes de Node.js necesarios (indicados en package.json):
 ### `npm i`
 
-Modificar tus variables de entorno dentro del archivo .env (en la raíz del proyecto):
+Crea y asigna tus variables de entorno dentro del archivo .env (en la raíz del proyecto):
 
 ### `HOST=host`
 ### `DATABASE=database`
