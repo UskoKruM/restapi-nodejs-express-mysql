@@ -1,0 +1,27 @@
+
+*tipos de astro astros por categorias:GetAll  DONE
+
+id_astro,
+type_astro, 
+image_url,
+
+*astro por id: findById  DONE
+
+id_astro,
+type_astro,
+name_astro, 
+description,
+image_url,
+distance,
+name_composition,
+composition_description
+
+
+*users Get All:  DONE
+
+id_user,
+type_user,
+first_name,
+last_name,
+email,
+password
