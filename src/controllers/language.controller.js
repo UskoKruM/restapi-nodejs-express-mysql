@@ -3,7 +3,7 @@ import { getConnection } from "./../database/database";
 const getLanguages = async (req, res) => {
     try {
         const connection = await getConnection();
-        const result = await connection.query("SELECT id, name, programmers FROM language");
+        const result = await connection.query("SELECT *FROM astro");
         res.json(result);
     } catch (error) {
         res.status(500);
@@ -15,7 +15,7 @@ const getLanguage = async (req, res) => {
     try {
         const { id } = req.params;
         const connection = await getConnection();
-        const result = await connection.query("SELECT id, name, programmers FROM language WHERE id = ?", id);
+        const result = await connection.query("SELECT *FROM astro WHERE id = ?", id);
         res.json(result);
     } catch (error) {
         res.status(500);
@@ -33,7 +33,7 @@ const addLanguage = async (req, res) => {
 
         const language = { name, programmers };
         const connection = await getConnection();
-        await connection.query("INSERT INTO language SET ?", language);
+        await connection.query("INSERT INTO astro SET ?", language);
         res.json({ message: "Language added" });
     } catch (error) {
         res.status(500);
