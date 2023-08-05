@@ -1,5 +1,6 @@
 {
     "name": "restapi-nodejs-express-mysql",
+    "type": "module",
     "version": "1.0.0",
     "description": "",
     "main": "src/index.js",
