@@ -6,7 +6,7 @@ const connection = mysql.createConnection({
     user: "uumm0hivgxvub",
     password: "KwazuluBulgaria2020"
 });
-const getConnection = () => {
+export const getConnection = () => {
     return connection;
 };
 export default getConnection;
